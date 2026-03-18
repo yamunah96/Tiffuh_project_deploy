@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body {
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -39,45 +38,3 @@ ul {
 
   margin: auto;
 }
-=======
-body {
-  text-align: center;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  background-color: bisque;
-}
-form {
-  background-color: black;
-  color: white;
-  height: auto;
-  width: 50%;
-  margin: auto;
-  padding: 10px;
-}
-label {
-  text-align: left;
-}
-input {
-  width: 70px;
-  margin-left: 20px;
-}
-select {
-  width: 70px;
-  margin-left: 20px;
-}
-button {
-  margin-top: 20px;
-}
-.result {
-  background-color: white;
-  color: black;
-  margin: auto;
-  width: 50%;
-}
-ul {
-  list-style-type: none; /* Removes the bullets */
-  padding: 0; /* Removes default left padding */
-  margin: 0; /* Removes default margins */
-
-  margin: auto;
-}
->>>>>>> 897ac195aa748e1a44139ae0c80fdb95ea0cf341
