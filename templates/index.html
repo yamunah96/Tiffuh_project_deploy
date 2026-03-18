@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html>
   <head>
@@ -48,3 +49,55 @@
     </div>
   </body>
 </html>
+=======
+<!doctype html>
+<html>
+  <head>
+    <title>FarmCalc Yield Calculator</title>
+    <link href="../static/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <h2>FarmCalc - Yield Calculator</h2>
+
+    <form method="POST">
+      <label>Area:</label>
+      <input type="number" step="0.01" name="area" required /><br />
+
+      <label>Unit:</label>
+      <select name="unit">
+        <option value="acres">Acres</option>
+        <option value="hectares">Hectares</option>
+      </select>
+      <br />
+
+      <label>Crop Type:</label>
+      <select name="crop">
+        {% for crop in crops %}
+        <option value="{{crop}}">{{crop}}</option>
+        {% endfor %}</select
+      ><br />
+
+      <label>Expected Yield per Unit:</label>
+      <input type="number" step="0.01" name="yield" required /><br />
+
+      <button type="submit">Calculate</button>
+    </form>
+
+    <div class="result">
+      {% if result %}
+
+      <h3>Total Estimated Yield: {{result}}</h3>
+
+      <h4>Summary</h4>
+      <ul>
+        <li>Area: {{summary.area}} {{summary.unit}}</li>
+        <li>Crop: {{summary.crop}}</li>
+        <li>Yield per unit: {{summary.yield_per_unit}}</li>
+      </ul>
+
+      {% endif %}
+    </div>
+  </body>
+</html>
+>>>>>>> 897ac195aa748e1a44139ae0c80fdb95ea0cf341
